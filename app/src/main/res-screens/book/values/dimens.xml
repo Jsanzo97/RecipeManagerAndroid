@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BOOK DIMENS -->
+
+    <dimen name="corner_radius_recipe_card_view">8dp</dimen>
+    <dimen name="recipe_card_button_font_size">12dp</dimen>
+
+</resources>

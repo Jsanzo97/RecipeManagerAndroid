@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_data_usage_section_title">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/settings_data_usage_key"
+            android:summary="@string/settings_data_usage_summary"
+            android:title="@string/settings_data_usage_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_session_section_title">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:dialogTitle="@string/settings_session_title"
+            android:entries="@array/pref_session_duration_entries"
+            android:entryValues="@array/pref_session_duration_values"
+            android:key="@string/settings_session_key"
+            android:summary="@string/settings_session_summary"
+            android:title="@string/settings_session_section_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

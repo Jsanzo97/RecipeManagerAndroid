@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- COMMON STRINGS -->
+    <string name="loading">Loading…</string>
+    <string name="accept">Accept</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Something went wrong</string>
+    <string name="success">All went well</string>
+
+    <string name="custom_dialog_fragment_ok">ACCEPT</string>
+    <string name="custom_dialog_fragment_cancel">CANCEL</string>
+
+</resources>

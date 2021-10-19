@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SETTINGS STRINGS -->
+
+    <string name="settings_data_usage_section_title">Uso de datos</string>
+    <string name="settings_data_usage_title">Ahorro de datos</string>
+    <string name="settings_data_usage_summary">La información sólo será recuperada del servidor cada 24h, permitiendo ahorrar en el consumo de datos, se utilizará una base de datos local mientras tanto</string>
+
+    <string name="settings_session_section_title">Seguridad</string>
+    <string name="settings_session_title">Mantener mi sesión</string>
+    <string name="settings_session_summary">Mantener mi sesión iniciada durante el tiempo seleccionado</string>
+
+    <string name="settings_session_never">Nunca</string>
+
+</resources>

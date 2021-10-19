@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CREATION STRINGS -->
+
+    <string name="creation_recipe_title">Título:</string>
+    <string name="creation_recipe_category">Categoría:</string>
+    <string name="creation_recipe_subcategory">Subcategoría:</string>
+    <string name="creation_recipe_ingredients">Ingredientes:</string>
+    <string name="creation_recipe_add_ingredient">Añadir ingrediente</string>
+    <string name="creation_recipe_description">Descripción:</string>
+    <string name="creation_recipe_duration">Duración en horas:</string>
+    <string name="creation_recipe_difficult">Dificultad:</string>
+    <string name="recipe_creation_clear_fields">BORRAR</string>
+    <string name="recipe_creation_create_recipe">CREAR</string>
+    <string name="recipe_creation_ingredient_type">Tipo de ingrediente:</string>
+    <string name="recipe_creation_calories">Calorías:</string>
+    <string name="recipe_creation_back">ATRÁS</string>
+    <string name="recipe_creation_done">HECHO</string>
+    <string name="recipe_creation_confirmation">¿Estás seguro de que quieres crear esta receta?</string>
+    <string name="recipe_creation_ingredient_confirmation">¿Estás seguro de que quieres crear este ingrediente?</string>
+
+    <string name="recipe_creation_select_ingredient_type">SELECCIONA EL TIPO DE INGREDIENTE</string>
+    <string name="recipe_creation_select_difficult">SELECCIONA LA DIFICULTAD</string>
+    <string name="recipe_creation_select_category">SELECCIONA LA CATEGORÍA</string>
+    <string name="recipe_creation_select_subcategory">SELECCIONA LA SUBCATEGORÍA</string>
+
+    <string name="recipe_creation_error_retrieve_information">Ocurrió un error al intentar recuperar la información del servidor</string>
+    <string name="recipe_creation_error_creating_recipe">Ocurrió un problema al intentar guardar la nueva receta</string>
+    <string name="recipe_creation_empty_fields_wrong_values">Hay campos vacíos o campos con valores erróneos</string>
+
+    <string name="recipe_creation_success_message">Enhorabuena, has creado una nueva receta!</string>
+
+</resources>

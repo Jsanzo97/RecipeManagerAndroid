@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SETTINGS STRINGS -->
+
+    <string name="settings_data_usage_section_title">Data usage</string>
+    <string name="settings_data_usage_title">Save on data consumption</string>
+    <string name="settings_data_usage_key" translatable="false">Data usage key</string>
+    <string name="settings_data_usage_summary">The information will be retrieved from the server only one time every 24h, allowing to save on data consumption, the local database will be used meanwhile</string>
+
+    <string name="settings_session_section_title">Security</string>
+    <string name="settings_session_title">Keep my session on</string>
+    <string name="settings_session_key" translatable="false">Session security key</string>
+    <string name="settings_session_summary">Keep my session logged in for the selected time</string>
+
+    <string name="settings_session_never">Never</string>
+
+    <string-array name="pref_session_duration_values">
+        <item>0</item>
+        <item>12</item>
+        <item>24</item>
+        <item>48</item>
+    </string-array>
+
+    <string-array name="pref_session_duration_entries">
+        <item>@string/settings_session_never</item>
+        <item>12h</item>
+        <item>24h</item>
+        <item>48h</item>
+    </string-array>
+
+</resources>

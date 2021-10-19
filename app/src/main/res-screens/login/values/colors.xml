@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LOGIN COLORS -->
+
+    <color name="login_button_background_color">@color/colorPrimary_50</color>
+
+</resources>

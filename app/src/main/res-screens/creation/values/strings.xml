@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CREATION STRINGS -->
+
+    <string name="creation_recipe_title">Title:</string>
+    <string name="creation_recipe_category">Category:</string>
+    <string name="creation_recipe_subcategory">Subcategory:</string>
+    <string name="creation_recipe_ingredients">Ingredients:</string>
+    <string name="creation_recipe_add_ingredient">Add Ingredient</string>
+    <string name="creation_recipe_description">Description:</string>
+    <string name="creation_recipe_duration">Duration in hours:</string>
+    <string name="creation_recipe_difficult">Difficult:</string>
+    <string name="recipe_creation_clear_fields">CLEAR</string>
+    <string name="recipe_creation_create_recipe">CREATE</string>
+    <string name="recipe_creation_ingredient_type">Ingredient type:</string>
+    <string name="recipe_creation_calories">Calories:</string>
+    <string name="recipe_creation_back">BACK</string>
+    <string name="recipe_creation_done">DONE</string>
+    <string name="recipe_creation_confirmation">Are you sure you want to create this recipe?</string>
+    <string name="recipe_creation_ingredient_confirmation">Are you sure you want to create this ingredient?</string>
+
+
+    <string name="recipe_creation_select_ingredient_type">SELECT INGREDIENT TYPE</string>
+    <string name="recipe_creation_select_difficult">SELECT DIFFICULT</string>
+    <string name="recipe_creation_select_category">SELECT CATEGORY</string>
+    <string name="recipe_creation_select_subcategory">SELECT SUBCATEGORY</string>
+
+    <string name="recipe_creation_error_retrieve_information">There is a problem trying to retrieve the data from the server</string>
+    <string name="recipe_creation_error_creating_recipe">There is a problem trying to save the new recipe</string>
+    <string name="recipe_creation_empty_fields_wrong_values">There are empty fields or fields with wrong values</string>
+
+    <string name="recipe_creation_success_message">Congratulations, you have created a new recipe!</string>
+
+</resources>

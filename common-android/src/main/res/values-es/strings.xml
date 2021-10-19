@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- COMMON STRINGS -->
+    <string name="loading">Cargando…</string>
+    <string name="accept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="error">Algo salió mal</string>
+    <string name="success">Todo salió bien</string>
+
+    <string name="custom_dialog_fragment_ok">ACCEPTAR</string>
+    <string name="custom_dialog_fragment_cancel">CANCELAR</string>
+
+</resources>

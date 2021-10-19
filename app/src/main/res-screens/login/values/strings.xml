@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LOGIN STRINGS -->
+
+    <string name="username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_log_in">Log in</string>
+    <string name="login_sign_up">Sign up</string>
+    <string name="login_invalid_credentials">Invalid credentials</string>
+    <string name="error_log_in">Error on log in operation</string>
+    <string name="empty_username_or_password">Username or password can\'t be empty</string>
+    <string name="error_sign_up">Error on sign up operation</string>
+    <string name="user_already_exists">An user with that username already exists</string>
+    <string name="login_success_sign_up">Congratulations, you have created a new account and now you can log in!</string>
+    <string name="login_notification_title">Welcome to Recipe Manager</string>
+    <string name="login_notification_message">You have logged in from: %1$s, %2$s</string>
+    <string name="login_denied_location_permission">You should grant permissions to log in the app</string>
+    <string name="login_denied_activation_location">If you don\'t grant permissions, you can\'t access the app</string>
+    <string name="login_grant">Grant</string>
+    <string name="login_activate">Activate</string>
+
+</resources>

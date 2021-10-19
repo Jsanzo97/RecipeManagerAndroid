@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BOOK STRINGS -->
+
+    <string name="recipe_category_title">Category:</string>
+    <string name="recipe_duration_title">Duration:</string>
+    <string name="recipe_difficult_title">Difficult:</string>
+    <string name="recipe_details">DETAILS</string>
+    <string name="recipe_delete">DELETE</string>
+    <string name="recipe_back">BACK</string>
+    <string name="no_recipes">There is no recipes yet, go to the menu and create new one</string>
+    <string name="recipe_subcategories_title">Subcategories:</string>
+    <string name="recipe_ingredients_title">Ingredients:</string>
+    <string name="recipe_description_title">Description:</string>
+    <string name="recipe_calories_title">Calories:</string>
+    <string name="recipe_duration_format" translatable="false">%1$.1fh</string>
+    <string name="recipe_delete_confirmation">Are you sure you want to delete this recipe?</string>
+
+    <string name="error_loading_recipes_from_server">There was an error when try to retrieve the recipes from the server</string>
+    <string name="error_removing_recipe_from_server">There was an error when try to delete the recipe from the server</string>
+    <string name="error_removing_recipe_from_db">There was an error when try to remove the recipe from the database</string>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="application_name" translatable="false">RecipeManager</string>
+
+    <!-- COMMON STRINGS -->
+    <string name="loading">Loading…</string>
+
+</resources>

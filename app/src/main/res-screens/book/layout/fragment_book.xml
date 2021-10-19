@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_book_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/recipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recipe_book_list"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/big_space"
+            android:clipToPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recipe_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/recipe_details_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/medium_space"
+                android:layout_marginStart="@dimen/medium_space"
+                android:layout_marginEnd="@dimen/medium_space"
+                android:layout_marginBottom="@dimen/big_space"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="@dimen/corner_radius_recipe_card_view"
+                app:cardElevation="@dimen/small_space" >
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/vertical_50_guideline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_title"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/small_space"
+                            android:layout_marginEnd="@dimen/small_space"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:text="TITLE" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_category_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_category_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_title"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_category_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_title"
+                            app:layout_constraintStart_toEndOf="@id/recipe_details_category_title"
+                            app:layout_constraintEnd_toStartOf="@id/vertical_50_guideline"
+                            tools:text="category value" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_duration_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_duration_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_category_title"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_duration_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_category_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_category_title"
+                            app:layout_constraintStart_toEndOf="@id/recipe_details_duration_title"
+                            app:layout_constraintEnd_toStartOf="@id/vertical_50_guideline"
+                            tools:text="duration value" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_difficult_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_difficult_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/smallest_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_category_title"
+                            app:layout_constraintStart_toEndOf="@id/vertical_50_guideline" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_difficult_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_category_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_category_title"
+                            app:layout_constraintStart_toEndOf="@id/recipe_details_difficult_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:text="difficult value" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_subcategories_title"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_subcategories_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_difficult_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/vertical_50_guideline"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_subcategories_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/medium_space"
+                            android:layout_marginTop="@dimen/small_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_subcategories_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/vertical_50_guideline"
+                            tools:text="some categories"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_ingredients_title"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_ingredients_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/smallest_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_difficult_title"
+                            app:layout_constraintStart_toEndOf="@id/vertical_50_guideline" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_ingredients_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/medium_space"
+                            android:layout_marginTop="@dimen/small_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_subcategories_title"
+                            app:layout_constraintStart_toEndOf="@id/vertical_50_guideline"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:text="some ingredients"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_description_title"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_description_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_subcategories_value"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/vertical_50_guideline"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_calories_title"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_calories_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/smallest_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_description_value"
+                            app:layout_constraintStart_toStartOf="parent"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_calories_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginEnd="@dimen/small_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_description_value"
+                            app:layout_constraintStart_toEndOf="@id/recipe_details_calories_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:text="calories value"/>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/recipe_details_description_value"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recipe_description_title"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/medium_space"
+                            android:layout_marginTop="@dimen/small_space"
+                            android:layout_marginEnd="@dimen/small_space"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_description_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:text="random description"/>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/recipe_details_back"
+                            android:layout_width="@dimen/zero"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/medium_space"
+                            android:layout_marginStart="@dimen/small_space"
+                            android:layout_marginEnd="@dimen/small_space"
+                            android:text="@string/recipe_back"
+                            style="@style/AppTheme.Book.Button.RecipeCard"
+                            app:layout_constraintTop_toBottomOf="@id/recipe_details_calories_title"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/recipe_details_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_close"
+                app:tint="@color/colorPrimary"
+                app:fabSize="mini"
+                app:borderWidth="@dimen/zero"
+                app:backgroundTint="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:elevation="@dimen/medium_space"
+                android:contentDescription="@string/recipe_back"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recipe_text_no_recipes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_recipes"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

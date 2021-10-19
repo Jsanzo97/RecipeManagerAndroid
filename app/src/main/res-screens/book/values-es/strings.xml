@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BOOK STRINGS -->
+
+    <string name="recipe_category_title">Categoría:</string>
+    <string name="recipe_duration_title">Duración:</string>
+    <string name="recipe_difficult_title">Dificultad:</string>
+    <string name="recipe_details">DETALLES</string>
+    <string name="recipe_delete">ELIMINAR</string>
+    <string name="recipe_back">VOLVER</string>
+    <string name="no_recipes">No hay recetas todavía, vaya al menú y cree una nueva</string>
+    <string name="recipe_subcategories_title">Subcategorias:</string>
+    <string name="recipe_ingredients_title">Ingredientes:</string>
+    <string name="recipe_description_title">Descripción:</string>
+    <string name="recipe_calories_title">Calorías:</string>
+    <string name="recipe_delete_confirmation">¿Estás seguro de que quieres borrar esta receta?</string>
+
+    <string name="error_loading_recipes_from_server">Ocurrió un error al intentar recuperar las recetas del servidor</string>
+    <string name="error_removing_recipe_from_server">Ocurrió un error al intentar borrar la receta del servidor</string>
+    <string name="error_removing_recipe_from_db">Ocurrió un error al intentar borrar la receta de la base de datos</string>
+
+</resources>

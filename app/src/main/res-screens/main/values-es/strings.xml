@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN STRINGS -->
+
+    <string name="main_book_recipe">Libro de recetas</string>
+    <string name="main_recipe_creation">Nueva receta</string>
+    <string name="main_settings">Ajustes</string>
+    <string name="main_logout">Cerrar sesión</string>
+
+    <string name="recipe_creation_bar_title">Creando nueva receta</string>
+    <string name="recipe_book_bar_title">Libro de recetas</string>
+    <string name="recipe_settings_bar_title">Ajustes</string>
+
+    <string name="custom_dialog_fragment_ok">ACEPTAR</string>
+    <string name="custom_dialog_fragment_cancel">CANCELAR</string>
+
+</resources>

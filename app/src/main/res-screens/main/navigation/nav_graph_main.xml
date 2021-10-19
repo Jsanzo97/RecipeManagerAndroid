@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/fragment_login">
+    <fragment
+        android:id="@+id/fragment_book"
+        android:name="com.jsanzo97.recipemanager.ui.book.BookFragment"
+        android:label="@string/recipe_book_bar_title" />
+
+    <fragment
+        android:id="@+id/fragment_creation"
+        android:name="com.jsanzo97.recipemanager.ui.creation.CreationFragment"
+        android:label="@string/recipe_creation_bar_title" >
+        <action
+            android:id="@+id/action_fragment_creation_to_fragment_book"
+            app:destination="@id/fragment_book"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.jsanzo97.recipemanager.ui.login.LoginFragment"
+        android:label="" >
+        <action
+            android:id="@+id/action_fragment_login_to_fragment_book"
+            app:destination="@id/fragment_book"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/main_nav_graph" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_fragment_login"
+        app:destination="@id/fragment_login"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@+id/main_nav_graph"/>
+
+    <fragment
+        android:id="@+id/fragment_settings"
+        android:name="com.jsanzo97.recipemanager.ui.settings.SettingsFragment"
+        android:label="@string/recipe_settings_bar_title" >
+
+    </fragment>
+
+</navigation>

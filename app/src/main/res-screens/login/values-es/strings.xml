@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- LOGIN STRINGS -->
+
+    <string name="username">Nombre de usuario</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_log_in">Iniciar sesión</string>
+    <string name="login_sign_up">Registrarse</string>
+    <string name="login_invalid_credentials">Credenciales inválidas</string>
+    <string name="error_log_in">Error al iniciar sesión</string>
+    <string name="empty_username_or_password">El nombre de usuario o la contraseña no pueden estar vacíos</string>
+    <string name="error_sign_up">Error al registrar el usuario</string>
+    <string name="user_already_exists">Ya existe un usuario con ese nombre de usuario</string>
+    <string name="login_success_sign_up">Enhorabuena, has creado una cuenta nueva y ya puedes iniciar sesión!</string>
+    <string name="login_notification_title">Bienvenido a Recipe Manager</string>
+    <string name="login_notification_message">Has iniciado sesión desde: %1$s, %2$s</string>
+    <string name="login_denied_location_permission">Debe conceder permisos para iniciar sesión</string>
+    <string name="login_denied_activation_location">Si no activas la ubicación no podras iniciar sesión</string>
+    <string name="login_grant">Conceder</string>
+    <string name="login_activate">Activar</string>
+
+</resources>
